@@ -61,14 +61,14 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html"><b>Home</b></a></li>
-                    <li><a href="about.html"><b>About us</b></a></li>
-                    <li><a href="#study"><b>Innovation | Excellence</b></a></li>
+                        <a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#study">Innovation | Excellence</a></li>
                     <li>
-                        <a href="service.html"><b>Service</b></a>
+                        <a href="service.html">Service</a>
                     </li>
-                    <li><a href="#client"><b>Clients & partners</b></a></li>
-                    <li><a href="contact.html"><b>Contact us</b></a></li>
+                    <li><a href="#client">Clients & partners</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -176,13 +176,13 @@
                                 <i class="fa fa-lightbulb-o"></i>
                             </div>
                             <p>
-    <h6>
-        Web Design
-    </h6>
-    </p>
-    <div class="separator3"></div>
-    </a>
-</div>
+                            <h6>
+                                Web Design
+                            </h6>
+                            </p>
+                            <div class="separator3"></div>
+                            </a>
+                        </div>
 
 </div>
 </div>
@@ -266,29 +266,30 @@
                     <hr class="bottom-line">
                 </div>
                 <div class="col-sm-6 col-md-2 col-xs-12">
-                    <a href=""><img src="assets/images/uhuru.jpg"height="100px" alt="partner" /></a>
+                    <a href="#"><img src="assets/images/uhuru.jpg" alt="partner" /></a>
                 </div>
                 <div class="col-sm-6 col-md-2 col-xs-12">
-                    <a href=""><img src="assets/images/tz.png"height="60px"alt="partner" /></a>
+                    <a href="#"><img src="assets/images/tz.png"alt="partner" /></a>
                 </div>
                 <div class="col-sm-6 col-md-2 col-xs-12">
-                    <a href=""> <img src="images/clients/1.png" alt="partner" /></a>
+                    <a href="#"> <img src="images/clients/1.png" alt="partner" /></a>
                 </div>
                 <div class="col-sm-6 col-md-2 col-xs-12">
-                    <a href=""><img src="assets/images/Rain.png"height="100px" alt="partner" /></a>
+                    <a href="#"><img src="assets/images/Rain.png" alt="partner" /></a>
                 </div>
                 <div class="col-sm-6 col-md-2 col-xs-12">
-                    <a href="">     <img src="images/clients/5.png" alt="partner" /></a>
+                    <a href="#"><img src="images/clients/5.png" alt="partner" /></a>
                 </div>
                 <div class="col-sm-6 col-md-2 col-xs-12">
-                    <a href=""><img src="images/clients/2.png" alt="partner" /></a>
+                    <a href="#"><img src="images/clients/2.png" alt="partner" /></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section class="footer">
-        <div class="container">
+    <section id="counter" class="counter">
+     <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="main_footer">
@@ -298,16 +299,15 @@
                                     <a href="https://www.facebook.com/www.fasthub.co.tz/"target="_blank"><i class="fa fa-facebook"></i></a>
                                     <a href="https://twitter.com/fasthubtz"target="_blank"><i class="fa fa-twitter"></i></a>
                                     <a href="https://www.instagram.com/fasthubtz/"target="_blank"><i class="fa fa-instagram"></i></a>
-
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xs-12">
                                 <div class="copyright_text">
                                     <p class=" wow fadeInRight" data-wow-duration="1s">
                                         <a href="http://dev@fasthub.co.tz">
-                                            <b>Fasthub Solution Company</b></a>
+                                            <span>Fasthub Solution Company</span></a>
                                         <i class="fa fa-computer">
-                                        </i><b>2016. All Rights Reserved</b>
+                                        </i><span>2016. All Rights Reserved</span>
                                     </p>
                                 </div>
                             </div>
@@ -316,11 +316,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    </div>
-
-
+    </section></div>
     <div class="scrollup">
         <a href="#"><i class="fa fa-chevron-up"></i></a>
     </div>
@@ -333,35 +329,39 @@
     <script src="assets/css/slick/slick.js"></script>
     <script src="assets/css/slick/slick.min.js"></script>
     <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        $(document).ready(function() {
-    var panels = $('.vote-results');
-    var panelsButton = $('.dropdown-results');
-    panels.hide();
-
-    //Click dropdown
-    panelsButton.click(function() {
-        //get data-for attribute
-        var dataFor = $(this).attr('data-for');
-        var idFor = $(dataFor);
-
-        //current button
-        var currentButton = $(this);
-        idFor.slideToggle(400, function() {
-            //Completed slidetoggle
-            if(idFor.is(':visible'))
-            {
-                currentButton.html('Hide Results');
-            }
-            else
-            {
-                currentButton.html('View Results');
-            }
-        })
-    });
-});
+    <script language="JavaScript">
 
     </script>
+    <script src="assets/js/main.js"></script>
+    <script>
+                                                $(document).ready(function() {
+                                                var panels = $('.vote-results');
+                                                var panelsButton = $('.dropdown-results');
+                                                panels.hide();
+
+                                                //Click dropdown
+                                                panelsButton.click(function() {
+                                                    //get data-for attribute
+                                                    var dataFor = $(this).attr('data-for');
+                                                    var idFor = $(dataFor);
+
+                                                    //current button
+                                                    var currentButton = $(this);
+                                                    idFor.slideToggle(400, function() {
+                                                        //Completed slidetoggle
+                                                        if(idFor.is(':visible'))
+                                                        {
+                                                            currentButton.html('Hide Results');
+                                                        }
+                                                        else
+                                                        {
+                                                            currentButton.html('View Results');
+                                                        }
+                                                    })
+                                                 });
+                                                 });
+
+                                            </script>
+
 </body>
 </html>

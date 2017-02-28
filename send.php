@@ -1,22 +1,13 @@
 <?php
-//if "email" variable is filled out, send email
-  if (isset($_REQUEST['email']))  {
+   $to = "dev@fasthub.co.tz";
+   $subject = "This is subject";
+   $message = "my text";
 
-  //Email information
-  $to = "richard.robert@fasthub.co.tz";
-  $email = $_REQUEST['email'];
-  $subject = $_REQUEST['subject'];
-  $message = $_REQUEST['message'];
+   $result = mail ($to,$subject,$message,$header);
 
-  //send email
-  mail($to, "$subject", $message, "From:" . $email);
-
-  //Email response
-  echo "Thank you for contacting us!";
-  }
-
-  //if "email" variable is not filled out, display the form
-  else  {
-  echo "Sorry your message failed to be sent!";
-  }
+   if( $result == true ){
+      echo "Message sent successfully...";
+   }else{
+      echo "Sorry, unable to send mail...".print_r($result);
+   }
 ?>
